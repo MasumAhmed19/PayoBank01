@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Payoo Bank</title>
+</head>
+<body class="flex justify-center items-center h-[100vh] bg-[#a218c3]">
+
+    <main class="">
+        <div class="mockup-phone ">
+            <div class="camera"></div>
+            <div class="display ">
+              <div class="artboard bg-white artboard-demo phone-2 md:p-[20px] p-[10px] space-y-[15px]">
+                
+                <!-- Total Money -->
+                <div class="stats shadow border-2 border-[#A218C3]">
+                    <div class="stat p-5 ">
+                      <div class="stat-value"><span id="currentBalance">8000</span> Tk</div>
+                      <div class="stat-title">Current Balance</div>
+                    </div>
+                </div>
+
+                  <!-- Two Button -->
+                <div class="flex flex-row gap-5 mt-5">
+                    <button id="addBtn" class="btn">Add Money</button>
+                    <button id="cashBtn" class="btn">Cash Out</button>
+                </div>
+
+                <!-- Add Money -->
+                <div id="addMoneySection" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+
+                      <div class="form-control">
+                        <input id="addAmount" type="text" placeholder="Add Amount" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control">
+                        <input id="userPassword" type="password" placeholder="Enter Password" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control mt-6">
+                        <button id="addMoneybtn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                </div>
+
+                <!-- Cash Out -->
+                <div id="cashOutSection" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <input id="outMoney" type="email" placeholder="Withdraw Amount" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control">                        
+                        <input id="userPin" type="password" placeholder="password" class="input input-bordered" required />                        
+                      </div>
+
+                      <div class="form-control mt-6">
+                        <button id="outMoneyBtn" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+
+
+
+              </div>
+            </div>
+          </div>
+    </main>
+    
+    <script src="js/calculate.js"></script>
+</body>
+</html>
